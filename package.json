@@ -1,0 +1,42 @@
+{
+  "name": "exchangehome",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://www.witrealty.co/",
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
+    "js-base64": "^2.4.9",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-grid-gallery": "^0.5.3",
+    "react-image-gallery": "^0.8.12",
+    "react-images": "^0.5.19",
+    "react-lightbox-component": "^1.2.1",
+    "react-owl-carousel": "^2.3.1",
+    "react-photo-gallery": "^6.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-social-sharing": "^1.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "clean": "rm -rf node_modules/gh-pages/.cache"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
+}

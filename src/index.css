@@ -1,0 +1,471 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/** header **/
+
+.ui.secondary.inverted.pointing.menu .item.none.active {
+  border: none !important;
+}
+
+/*** */
+
+/* navbar menu css */
+
+@media screen and (max-width: 991px) {
+  .ui.menu.navbartop a.item:not(:first-child){ display:none; }
+  .ui.menu.navbartop .right.menu a.item.icon { display:block !important; font-size:1.2rem !important;}
+  .ui.segment { padding:0}
+  .full-width-below-computer { width: 100% }
+
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .ui.vertical.divider:after, .ui.vertical.divider:before {
+    height: 0;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .tel-navbar, .fixed-top.home .right.menu a.item  {
+    font-size: 1rem !important;
+  }
+  .ui.menu:not(.vertical) .right.menu {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .ui.menu.navbartop .right.menu a.item.icon {
+    padding-left: 0px !important;
+  }
+  .tel-navbar, .fixed-top.home .right.menu a.item  {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tel-navbar, .fixed-top.home .right.menu a.item  {
+    font-size: 0.85rem !important;
+  }
+}
+
+.tel-navbar {
+  margin-left: 5px;
+  font-size: 1.2rem;
+  line-height: 1.0;
+}
+
+.ui.menu .right.menu a.item.icon {
+  display:none;
+}
+
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* --- */
+
+/* --- content */
+
+.hero {
+  background-image: url('./img/apartment-apartments-architectural-design-534233.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 500wh;
+  height: 100vh;
+  display: flex;
+}
+
+.center-content {
+  width: 100%;
+  padding-top:80px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+.center-content h3, .center-content h5 {
+  color: white;
+  line-height: 1;
+}
+.center-content h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.center-content h5 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.flex-row {
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.language-choose {
+  width: 100%;
+  background: transparent !important;
+  color:white !important;
+}
+
+.ui.dropdown.language-choose:not(.button)>.default.text {
+  color:white;
+}
+
+.ui.selection.visible.dropdown.language-choose>.text:not(.default) {
+  color:white;
+}
+
+.date {
+  color:#848484;
+  white-space:nowrap;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  z-index: 1;
+  margin-top: 5px;
+  padding: 15px 10px;
+  border-radius: .28571429rem;
+}
+
+.show {display: block;}
+
+.column-left-in-dropdown {
+  width: 70px;
+  background-color:white;
+  height: 40px;
+  border: 1px solid #ced4da;
+}
+
+.text-in-column-dropdown {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem 0.6rem 0.5rem 1.2rem;
+}
+
+.rounded-image-guide {
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 50% !important;
+}
+
+/* ---*/
+
+/* this is my css owlcarousel */
+
+.owl-dots-newline .owl-dots {
+  position:static !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next { position: absolute; top: 0; bottom: 0;}
+
+.owl-nav .owl-prev {
+  left: 50px;
+}
+
+.owl-nav .owl-next {
+  right: 50px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent !important;
+  color: #869791 !important;
+  text-decoration: none; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  outline: none;
+  font-size:1.875rem !important;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 1 !important;
+}
+
+
+.owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin-top: 10px; 
+}
+
+  /*/ -------------------- */
+
+/* footer */
+
+.border-top-container {
+  border-top: 2px solid #646971;
+}
+
+/* icon property */
+
+.property-icon {
+  width: 160px;
+  height: 160px;
+  background-color: #ededed;
+  border-radius: 50%;
+  margin: 25px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* footer */
+.ui.list.footer>.item .header {
+  color: white
+}
+
+.ui.divided.horizontal.list>.item {
+  border-color: white !important;
+}
+
+.ui.divided.horizontal.list.footer>.item:not(:last-child) {
+  padding-right: 1.333rem;
+}
+
+.ui.divided.horizontal.list.footer>.item:not(:first-child) {
+  padding-left: 1.333rem
+}
+
+.ui.horizontal.list.footer.social>.item {
+  font-size: 1.725rem !important;
+}
+
+.ui.horizontal.list.footer>.item {
+  font-size: 0.855rem !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ui.divided.horizontal.list>.item:not(:first-child) {
+    padding-left: 0px !important;
+  }
+  .ui.divided.horizontal.list>.item:not(:last-child) {
+    padding-right: 0px !important;
+  }
+  .ui.divided.horizontal.list>.item {
+    display: block;
+    border: none !important;
+  }
+}
+
+
+
+/* ************** */
+
+/* contract us */
+.ui.items>.item>.content>a.header, .ui.items>.item>.content>.contract.description {
+  color: white;
+}
+
+.feedtextcontent{
+  position: relative;
+  float:left;
+  width:58%;
+  padding:10px 20px;
+  line-height: 38px;
+  color: white;
+}
+
+.noteright.feedtextcontent:before {
+  border-color: white white black black;
+}
+
+.noteleft.feedtextcontent:before {
+  border-color: white white black white;
+}
+
+.noteright:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 30px 30px 0;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+  transition: border 0.2s ease-in;
+}
+
+.noteright:hover:before, .noteleft:hover:before {
+  border-width: 0 0 0 0;
+}
+
+.noteleft:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0 0px 30px 30px;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+  transition: border 0.2s ease-in;
+}
+
+/* condo info */
+
+.utilities-img {
+  float:left;
+  margin-right: 5px;
+}
+
+.utilitie-text {
+  float:left;
+  max-width: 100%;
+}
+
+.utilitie-text span {
+  float:left;
+  clear:both;
+}
+
+
+.text-description1 {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.text-description2 {
+  font-size: 0.9rem;
+  color: #99e211;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 0.9rem;
+  font-weight: bold;
+}
+
+.price-condo {
+  font-size: 0.95em;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.bath {
+  font-weight: 400;
+  color: rgba(0,0,0,.6);
+}
+
+/* **** */
+
+/* loader */
+
+/* @vikttor_  */
+/* Loading SASS */
+.layer-preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(2, 188, 91);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.hide-loader {
+  display: none;
+}
+
+.loading {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.loading .loader {
+  position: absolute;
+  display: block;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  animation: loading 2s;
+  -webkit-animation: loading 2s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loading .loader.firstColor {
+  border-top-color: white;
+}
+.loading .loader.secondColor {
+  border-top-color: white;
+  left: 7px;
+  width: 127px;
+  height: 127px;
+  top: 7px;
+}
+.loading .loader.thirdColor {
+  border-top-color: white;
+  left: 8px;
+  width: 103px;
+  height: 103px;
+  top: 8px;
+}
+
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ENDA Loading */
+
+/* condo */
+
+.ui.items:not(.unstackable)>.item>.image {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* career */
+

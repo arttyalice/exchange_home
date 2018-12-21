@@ -1,0 +1,93 @@
+.h1 {
+    font-size: 60px !important;
+    background: -webkit-linear-gradient(left, #3D9970, #01FF70);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h2 {
+    font-size: 45px !important;
+    background: -webkit-linear-gradient(left, rgb(40, 100, 73), #01FF70);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 430px) {
+    .h2 {
+        font-size: 39px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .h2 {
+        font-size: 35px !important;
+    }
+}
+
+.h3 {
+    font-size: 30px !important;
+    background: -webkit-linear-gradient(left, rgb(26, 26, 26), rgb(52, 124, 83));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h3-small {
+    font-size: 20px !important;
+    background: -webkit-linear-gradient(left, rgb(101, 172, 106), rgb(0, 255, 55));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.listPropertyImg {
+    width: 160px;
+    min-height: 160px;
+    object-fit: cover;
+}
+
+.green-text {
+    font-size: 16px !important;
+    background: -webkit-linear-gradient(bottom, rgb(48, 117, 85), rgb(1, 148, 65));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.green-text-big {
+    font-size: 20px !important;
+    background: -webkit-linear-gradient(bottom, rgb(48, 117, 85), rgb(1, 148, 65));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-gallery-slide img {
+    max-height: 500px;
+    min-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.indent-text {
+    text-indent: 15px;
+}
+
+.art-flex {
+    display: flex;
+    width: 100%;
+}
+.art-flex .child {
+    width: 50%;
+}
+
+.subhead-article {
+    color: rgba(139, 139, 139, 0.76);
+    font-size: 14px;
+    padding: 0;
+    margin: -9px 0 -9px 0
+}
+@media only screen and (max-width: 560px) {
+    .art-flex {
+        display: block;
+        width: 100%;
+    }
+    .art-flex .child {
+        width: 100%;
+    }
+}
